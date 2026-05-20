@@ -7,8 +7,6 @@ def prime(n):
             if n % i == 0:
                 return False
         return True 
-s = int(input("Enter a num:"))
-if prime(s):
-    print("Prime")
-else:
-    print("Not Prime")
+for num in range(2,101): 
+    if prime(num):
+        print(num, end=" ")
